@@ -19,6 +19,9 @@ Please create a .env from the sample file .env-sample
 ## Examples
 
 [Coupons_NearBy_BizTechCS_With_Range_In_2km](http://localhost:3000/v1/coupons?lat=23.0116012&long=72.5129047&range=2&limit=15&offset=0)
+
 [Coupons_NearBy_BizTechCS_With_Range_In_5km](http://localhost:3000/v1/coupons?lat=23.0116012&long=72.5129047&range=5&limit=15&offset=0)
+
 [Coupons_NearBy_Surat_Bus_Stand_With_Range_In_2km](http://localhost:3000/v1/coupons?lat=21.2032321&long=72.8384328&range=2&limit=15&offset=0)
+
 [Coupons_NearBy_Surat_Bus_Stand_With_Range_In_5km](http://localhost:3000/v1/coupons?lat=21.2032321&long=72.8384328&range=5&limit=15&offset=0)

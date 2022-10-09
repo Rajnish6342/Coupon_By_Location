@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "dc7103a0-da77-4a3a-8e2a-117d99f9282a",
+		"name": "BizTech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Coupon",
+			"item": [
+				{
+					"name": "Get Coupons",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/v1/coupons?lat=23.044188&long=72.511687&range=3&limit=15&offset=0",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"v1",
+								"coupons"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "23.044188",
+									"description": "Latitude"
+								},
+								{
+									"key": "long",
+									"value": "72.511687",
+									"description": "Longitude"
+								},
+								{
+									"key": "range",
+									"value": "3",
+									"description": "Range In Km"
+								},
+								{
+									"key": "limit",
+									"value": "15",
+									"description": "Coupons  limit to get"
+								},
+								{
+									"key": "offset",
+									"value": "0",
+									"description": "Coupons To Skip"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server",
+			"item": [
+				{
+					"name": "Server Version",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/version",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"version"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000"
+		}
+	]
+}
